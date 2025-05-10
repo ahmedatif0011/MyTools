@@ -1,0 +1,41 @@
+﻿@using MyTools.Constraints
+@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+
+@{
+	var settings = (GenralSettings)Umbraco.Content(Guid.Parse(General.GeneralSettingGUID));
+}
+<!--welcome-hero start -->
+<section id="home" class="welcome-hero" style="background: url(../images/welcome-hero/banner.jpg) no-repeat;">
+	<div class="container">
+		<div class="welcome-hero-txt">
+			<h2>best place to find and explore <br> that all you need </h2>
+			<p>
+				Find Best Place, Restaurant, Hotel, Real State and many more think in just One click
+			</p>
+		</div>
+		<div class="welcome-hero-serch-box">
+			<div class="welcome-hero-form">
+				<div class="single-welcome-hero-form">
+					<h3>what?</h3>
+					<form action="index.html">
+						<input type="text" placeholder="Ex: palce, resturent, food, automobile" />
+					</form>
+				</div>
+			</div>
+			<div class="welcome-hero-serch">
+				<button class="welcome-hero-btn" onclick="window.location.href='#'">
+					search  <i data-feather="search"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+
+</section><!--/.welcome-hero-->
+@* <script> *@
+@* 	const welcomeHero = document.querySelector('.welcome-hero'); *@
+@* 		if (welcomeHero) { *@
+@* 			welcomeHero.style.background = `url(${newBackgroundUrl}) no-repeat`; *@
+@* 			welcomeHero.style.backgroundSize = 'cover'; // Ensure the background covers the entire div *@
+@* 		} *@
+@* </script> *@

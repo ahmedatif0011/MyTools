@@ -1,0 +1,16 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = null;
+}
+<!doctype html>
+<html class="no-js" lang="en">
+    @Html.Partial("Partials/_Head")
+	<body>
+		@Html.Partial("Partials/_Navbar");
+		@Html.Partial("Partials/_HeroBanner");
+		@RenderBody();
+		@Html.Partial("Partials/_Footer");
+		@Html.Partial("Partials/_JSIncludes");
+    </body>
+</html>
